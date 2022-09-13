@@ -9,12 +9,12 @@ int main(void)
 {
 	char *text = "_putchar";
 
-	while(*text)
+	while (*text)
 	{
 		_putchar(*text);
 		text++;
 	}
 	_putchar('\n');
 
-	return(0);
+	return (0);
 }
