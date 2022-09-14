@@ -1,5 +1,6 @@
 #include "main.h"
-/** _abs - a function thart comutes the absolute valueof an integer
+/** 
+ * _abs - a function thart comutes the absolute valueof an integer
  * @ab: interger input
  * Return: absolute value of ab
  */
