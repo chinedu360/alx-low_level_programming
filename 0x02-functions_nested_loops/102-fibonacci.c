@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 /**
- * main - A function that primts first 50 fibonnaci numbers, starting with 1 and 3, separated by a comma followed by a space
+ * main - A function that primts first 50 fibonnaci numbers.
  *
  * Return: Always 0.
  */
@@ -17,12 +16,11 @@ int main(void)
 
 		fib1 = fib2;
 		fib2 = sum;
-		
+
 		if (count == 49)
 			printf("\n");
 		else
 			printf(", ");
-
 	}
 	return (0);
 }
