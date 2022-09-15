@@ -2,7 +2,7 @@
 /**
  * main - print the first 98 fib nums starts from 1 & 2
  *
- * Returns: Always 0
+ * Return: Always 0
  */
 int main(void)
 {
