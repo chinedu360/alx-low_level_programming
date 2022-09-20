@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts2 - a function that takes a pointer to an int as parameter and
+ * _puts - a function that takes a pointer to an int as parameter and
  * @str: chaine of caractere
  *
  * Return: 1 or 0
