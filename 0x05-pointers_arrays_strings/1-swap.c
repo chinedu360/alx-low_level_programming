@@ -1,6 +1,6 @@
 #include "main.h"
 
-/** 
+/**
  * swap_int - func that swaps two int
  * @a: int address
  * @b: int address
