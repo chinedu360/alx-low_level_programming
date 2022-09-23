@@ -1,26 +1,24 @@
 #include "main.h"
-
 /**
- * _strcat - this is a func strcat
- * @dest: first param
- * @src: second param
- *
- * Return: A xters.
+ * _strcat - concatenates two strings
+ * @dest: dest string
+ * @src: src string
+ * Return: pointer to resulting string
  */
-
-char *_strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
-	int len = 0, i;
+	int s = 0, i = 0;
 
-	while (dest[len])
-		len++;
-
-	for (i = 0; src[i] != 0; i++)
+	while (dest[s] != 0)
 	{
-		dest[len] = src[i];
-		len += 1;
+		s++;
+	}
+	while (src[i] != 0)
+	{
+		dest[s + i] = src[i];
+		i++;
 	}
 
-	dest[len] = '\0';
+	dest[s + i] = 0;
 	return (dest);
 }
