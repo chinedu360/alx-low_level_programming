@@ -9,16 +9,29 @@
 
 char *cap_string(char *str)
 {
-	int index = 0;
+	int i = 0, j = 0;
 
-	while (str[index])
+	char seps[] = {32, 10, 9, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+
+	int size = sizeof(seps) / sizeof(seps[0]);
+
+	while (s[i] != 0)
 	{
-		while (!(str[index] >= 'a' && str[index] <= 'z'))
-			index++;
+		char c = s[i];
 
-		if (str[index - 1] == ' ' ||str[index - 1] == '\t' ||str[index - 1] == '\n' ||str[index - 1] == ',' ||str[index - 1] == ';' ||str[index - 1] == '.' ||str[index - 1] == '!' ||str[index - 1] == '?' ||str[index - 1] == '"' ||str[index - 1] == '(' ||str[index - 1] == ')' ||str[index - 1] == '{' ||str[index - 1] == '}' ||index == 0)
-				str[index] -= 32;
+		for (j = 0; j < size; j++)
+		{
+			if (c == seps[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z')
+			{
+				s[i + 1] = 'A' + (s[i + 1] - 'a');
+				break;
+			}
+		}
+		i++;
 	}
 
-	index++;
+	if (s[0] >= 'a' && s[0] <= 'z')
+		s[0] = 'A' + (s[0] - 'a');
+
+	return (s);
 }
