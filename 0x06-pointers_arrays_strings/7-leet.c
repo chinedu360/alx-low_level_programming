@@ -2,8 +2,8 @@
 
 /**
  * leet - leet encoding
- * Return: pointer to arr
  * @s: string
+ * Return: points to arr
  */
 
 char *leet(char *s)
