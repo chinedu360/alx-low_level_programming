@@ -1,1 +1,1 @@
-fuctions in c and nested loops
+pointers strings and array
